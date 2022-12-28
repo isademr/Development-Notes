@@ -7,3 +7,11 @@ Resources:
 * https://talentgrid.io/github-nedir/
 * https://www.hostinger.web.tr/rehberler/github-nedir
 
+# Project 1
+
+* WebAPI oluştur
+* Herhangi bir ücretsiz API'ye istek atarak oradan gelen verileri gösteren bir end point yaz.
+* Bu endpoint in sadece get özelliği olacak
+* Daha sonra istek doğrultusunda filtreleyerek belirli bir veriyi geri dönderecek
+
+
