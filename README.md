@@ -11,7 +11,11 @@ Resources:
 
 * WebAPI oluştur
 * Herhangi bir ücretsiz API'ye istek atarak oradan gelen verileri gösteren bir end point yaz.
+  - HtttpClient makalelerini oku
+  - Bir console app oluştur ve herhangi bir API endpoint ine istek at
+  
 * Bu endpoint in sadece get özelliği olacak
 * Daha sonra istek doğrultusunda filtreleyerek belirli bir veriyi geri dönderecek
+  - Yeni entity oluştur ve get endpoint'inden mapledikten sonra dön.
 
 
