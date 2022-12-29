@@ -19,3 +19,29 @@ Resources:
   - Yeni entity oluştur ve get endpoint'inden mapledikten sonra dön.
 
 
+
+
+# C# 101
+* https://medium.com/@ibrahim63taskiran63/c-eri%CC%87%C5%9Fi%CC%87m-beli%CC%87rleyi%CC%87ci%CC%87leri%CC%87-7524df48a435
+* https://ilkaygenc.com.tr/metot-nedir-erisim-seviyeleri/
+* https://mcansozeri.wordpress.com/2010/04/22/c-sharp-tur-donusumu-amator-anlatim/
+* https://veriakademi.com/c-sharp-veri-tipleri
+* c# if else nedir
+
+
+
+
+
+
+
+## HttpClient 
+
+Target API: https://jsonplaceholder.typicode.com/
+
+Resources:
+* https://www.ilkayilknur.com/httpclient-artik-her-platformda
+* https://www.gencayyildiz.com/blog/tag/httpclient/
+* https://zetcode.com/csharp/httpclient/
+
+
+
