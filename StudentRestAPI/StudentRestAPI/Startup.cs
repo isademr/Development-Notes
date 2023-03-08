@@ -29,7 +29,7 @@ namespace StudentRestAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<AppDbContext>(options =>
-            options.UseSqlServer(Configuration.GetConnectionString("DBConnection")));
+            options.UseSqlServer(Configuration.GetConnectionString("ConnectionStrings:DbConnectionStrings")));
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
