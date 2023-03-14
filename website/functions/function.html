@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="isim" value="Coder">
+    <input type="text" id="soyisim" value="Akademi">
+    <button onclick="selamla()">Selam Ver</button>
+
+    <script>
+
+        function selamla() {
+            var adSoyad = isimSoyisimAl();
+            console.log("hi "  + adSoyad);
+            
+        }
+        function isimSoyisimAl(){
+            // var name = document.getElementById('isim').value;
+            var isimElement = document.getElementById('isim');
+            var name = isimElement.value;
+            
+            var soyadElement = document.getElementById('soyisim');
+            var surname = soyadElement.value;
+            
+            var nameSurname = name + " " + surname;
+            isimElement.value ="";
+            soyadElement.value ="";
+            return nameSurname;
+
+        }
+
+
+
+        // var nameSurname;
+        // function selamla() {
+        //     isimSoyisimAl();
+        //     console.log("hi "  + nameSurname);
+            
+        // }
+        // function isimSoyisimAl(){
+        //     // var name = document.getElementById('isim').value;
+        //     var isimElement = document.getElementById('isim');
+        //     var name = isimElement.value;
+            
+        //     var soyadElement = document.getElementById('soyisim');
+        //     var surname = soyadElement.value;
+
+        //      nameSurname = name + " " + surname;
+        //     isimElement.value ="";
+        //     soyadElement.value ="";
+
+        // }
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+#tab-heading{
+    list-style: none;
+    width: 500px;
+    padding: 0;
+}
+#tab-heading li{
+    display: inline-block;
+    background-color: red;
+    color: wheat;
+    padding: 5px 0;
+    width: 100;
+    margin: 0;
+    text-align: center;
+}
+#tab-heading li:hover{
+    cursor: pointer;
+    background-color: black;
+}
+.tab-content{
+    width: 400px;
+    border: 1px solid green;
+    padding: 3px 5px;
+    display: none;
+
+}
+.active{
+    display: block;
+}

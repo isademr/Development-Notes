@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <form name = f>
+        
+        Sayi 1: <input type = text name = sayi1><br>
+        Sayi 2: <input type = text name = sayi2><br>
+        <input type = button value = Topla: onclick="document.f.sonuc.value = parselnt(document.f.sayi1.value) + parselnt(document.f.sayi2.value)";><br>
+        <input type = button value = Cikar: onclick="document.f.sonuc.value = parselnt(document.f.sayi1.value) - parselnt(document.f.sayi2.value)";><br>
+        <input type = button value = Carp: onclick="document.f.sonuc.value  = parselnt(document.f.sayi1.value) * parselnt(document.f.sayi2.value)";><br>
+
+        Sonuc: <input type = text name = sonuc>
+    </form>
+    
+</body>
+</html>

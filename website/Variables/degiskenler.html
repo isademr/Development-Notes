@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>var</li>
+        <li>let</li>
+        <li>const</li>
+    </ul>
+    <script>
+        // var sayi; // variable decleration (değişken tanımlama)
+        //sayi=5; //Initialize(ilk değerin atanması)
+
+        //var sayi=4;
+        //sayi=67;
+        //console.log(sayi);
+        function Topla(){
+            //function scope
+        }
+        //Global Scope
+        function foodPrices(prices,addValue){
+            var newPriceList=[];
+            for(var i = 0; i<prices.length; i++){
+                var finalPrice=prices[i] + addValue;
+                newPriceList.push(finalPrice);
+            }
+            console.log(finalPrice);
+
+            return newPriceList;
+
+        }
+        const result=foodPrices([10,20,30],5);
+        console.log(result);
+    </script>
+</body>
+</html>

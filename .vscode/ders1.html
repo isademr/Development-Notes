@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    
+    <script>
+        var kitap = 100; var cd=200; var kaset = 50;
+        do{
+            var kitapistek = prompt("kaç tane kitap almak istiyorsunuz?", "lütfen rakam giriniz");
+            var cdistek = prompt("kaç tane cd almak istiyorsunuz?", "lütfen rakam giriniz");
+            var kasetistek = prompt("kaç tane kaset almak istiyorsunuz?", "lütfen rakam giriniz");
+            var kitaptutar = kitapistek * 100;
+            var cdtutar = cdistek * 200;
+            var kasettutar = kasetistek * 50;
+            var toplamtutar = kitaptutar + cdtutar + kasettutar;
+            document.write (kitapistek," tane kitap,",cdistek,"tane cd,", kasetistek,"tane kaset siparişiniz alınmıştır","<br>");
+            document.write("<br>","Aldığınız ürünlerin toplam tutarı = ",toplamtutar);
+            var istek = prompt("Başka ürünler satın almak istiyor musunuz?","e veya h giriniz");
+        }
+        while (istek == "e") document.write("<br>","Bizden alışveriş yaptığınız için teşekkürler");
+    </script>
+    
+</body>
+</html>
