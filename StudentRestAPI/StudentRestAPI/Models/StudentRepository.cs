@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace StudentRestAPI.Models
 {
-	[DebuggerDisplay("{" + nameof(GetDebuggerDisplay) + "(),nq}")]
+
 	public class StudentRepository : IStudentRepository
 	{
 		private readonly AppDbContext appDbContext;
@@ -20,9 +20,9 @@ namespace StudentRestAPI.Models
 			this.appDbContext = appDbContext;
 		}
 
-		public async Task<Student> AddStudent(Student student)
+		public async Task<Student> AddStudent (Student student)
 		{
-			var result = await AppDbContext.Students.AddAsync(student);
+			var result = await appDbContext.Students.AddAsync(student);
 			await appDbContext.SaveChangesAsync();
 			return result.Entity;
 		}
@@ -41,9 +41,10 @@ namespace StudentRestAPI.Models
 
 		}
 
-		public async Task<Student> GetStudent(int studentId) => await appDbContext.Students
+		public async Task<Student> GetStudent(int studentId) { 
+			return await appDbContext.Students
 				.FirstOrDefaultAsync(e => e.StudentId == studentId);
-
+		}
 		public async Task<Student> GetStudentByEmail(string email)
 		{
 			return await appDbContext.Students
@@ -58,6 +59,7 @@ namespace StudentRestAPI.Models
 		public async Task<IEnumerable<Student>> Search (string name, Gender? gender)
 		{
 			IQueryable<Student> query = appDbContext.Students;
+			
 			if (!string.IsNullOrEmpty(name))
 			{
 				query = query.Where(e => e.FirstName.Contains(name)
@@ -90,15 +92,23 @@ namespace StudentRestAPI.Models
 					result.DepartmentId = student.DepartmentId;
 				}
 
+				
 				result.PhotoPath = student.PhotoPath;
+				
 				await appDbContext.SaveChangesAsync();
+				
 				return result;
 			}
 
 			return null;
 		}
 
-		private string GetDebuggerDisplay()
+        Task<Student> IStudentRepository.DeleteStudent(int studentId)
+        {
+            throw new NotImplementedException();
+        }
+
+        private string GetDebuggerDisplay()
 		{
 			return ToString();
 		}

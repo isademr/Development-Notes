@@ -15,5 +15,7 @@ namespace StudentRestAPI
         public int DepartmentId { get; set; }
         public string PhotoPath { get; set; }
         public DateTime DateOfBirth { get; internal set; }
-    }
+
+		
+	}
 }
