@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generics", "Generics\Generi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadingDemo1", "ThreadingDemo1\ThreadingDemo1.csproj", "{A65ED5A3-64FA-4773-9115-76D38D4169D0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqProject", "LinqProject\LinqProject.csproj", "{A88E1611-3BDB-43E1-A938-1D514986547D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{A65ED5A3-64FA-4773-9115-76D38D4169D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A65ED5A3-64FA-4773-9115-76D38D4169D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A65ED5A3-64FA-4773-9115-76D38D4169D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A88E1611-3BDB-43E1-A938-1D514986547D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A88E1611-3BDB-43E1-A938-1D514986547D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A88E1611-3BDB-43E1-A938-1D514986547D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A88E1611-3BDB-43E1-A938-1D514986547D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
